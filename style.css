@@ -1,6 +1,6 @@
 body {
   margin: 0;
-  padding: 40px 24px;
+  padding: 28px 18px;
   font-family: Georgia, serif;
   background: transparent;
   color: #f5ede3;
@@ -12,71 +12,158 @@ body {
 }
 
 .shadow-tool {
-  max-width: 920px;
+  max-width: 820px;
   margin: 0 auto;
-  padding: 42px 32px;
-  border-radius: 28px;
+  padding: 34px 26px;
+  border-radius: 24px;
   background: linear-gradient(180deg, #211d44 0%, #1a1736 100%);
   border: 1px solid rgba(204, 170, 255, 0.18);
   box-shadow:
-    0 18px 40px rgba(10, 8, 30, 0.28),
+    0 18px 40px rgba(10, 8, 30, 0.22),
     inset 0 1px 0 rgba(255, 255, 255, 0.04);
   text-align: center;
 }
 
 .icon {
-  font-size: 2rem;
-  margin-bottom: 14px;
+  font-size: 1.6rem;
+  margin-bottom: 10px;
 }
 
 .shadow-tool h2 {
-  margin: 0 0 18px;
-  font-size: 3rem;
+  margin: 0 0 14px;
+  font-size: 2.35rem;
   line-height: 1.15;
   color: #f5ede3;
 }
 
 .tool-intro {
-  max-width: 760px;
-  margin: 0 auto 30px;
-  font-size: 1.1rem;
-  line-height: 1.9;
+  max-width: 700px;
+  margin: 0 auto 24px;
+  font-size: 1.02rem;
+  line-height: 1.8;
   color: #f2e9df;
 }
 
 #avoidanceButton {
   display: inline-block;
-  margin: 0 auto 28px;
-  padding: 18px 34px;
+  margin: 0 auto 24px;
+  padding: 15px 28px;
   border: none;
   border-radius: 999px;
   background: #d4b6ff;
   color: #2b2144;
-  font-size: 1.15rem;
+  font-size: 1.02rem;
   font-weight: 700;
   font-family: Georgia, serif;
   cursor: pointer;
-  box-shadow: 0 0 24px rgba(212, 182, 255, 0.35);
+  box-shadow: 0 0 22px rgba(212, 182, 255, 0.32);
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 #avoidanceButton:hover {
   transform: translateY(-1px);
-  box-shadow: 0 0 30px rgba(212, 182, 255, 0.5);
+  box-shadow: 0 0 28px rgba(212, 182, 255, 0.45);
 }
 
 .prompt-box {
-  max-width: 820px;
+  max-width: 760px;
   margin: 0 auto;
-  padding: 34px 28px;
-  min-height: 140px;
-  border-radius: 22px;
+  padding: 26px 22px;
+  min-height: 110px;
+  border-radius: 20px;
   background: rgba(96, 88, 134, 0.35);
   color: #f5ede3;
-  font-size: 1.35rem;
-  line-height: 1.7;
+  font-size: 1.12rem;
+  line-height: 1.65;
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
+}
+
+/* Tablet */
+@media (max-width: 768px) {
+  body {
+    padding: 20px 12px;
+  }
+
+  .shadow-tool {
+    max-width: 100%;
+    padding: 28px 18px;
+    border-radius: 20px;
+  }
+
+  .icon {
+    font-size: 1.45rem;
+    margin-bottom: 8px;
+  }
+
+  .shadow-tool h2 {
+    font-size: 1.95rem;
+    line-height: 1.2;
+    margin-bottom: 12px;
+  }
+
+  .tool-intro {
+    font-size: 0.98rem;
+    line-height: 1.7;
+    margin-bottom: 20px;
+  }
+
+  #avoidanceButton {
+    width: 100%;
+    max-width: 100%;
+    padding: 15px 18px;
+    font-size: 1rem;
+    margin-bottom: 20px;
+  }
+
+  .prompt-box {
+    max-width: 100%;
+    padding: 22px 18px;
+    min-height: 100px;
+    font-size: 1.02rem;
+    line-height: 1.6;
+    border-radius: 18px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+  body {
+    padding: 16px 10px;
+  }
+
+  .shadow-tool {
+    padding: 22px 14px;
+    border-radius: 18px;
+  }
+
+  .icon {
+    font-size: 1.3rem;
+  }
+
+  .shadow-tool h2 {
+    font-size: 1.65rem;
+    line-height: 1.2;
+    margin-bottom: 10px;
+  }
+
+  .tool-intro {
+    font-size: 0.93rem;
+    line-height: 1.65;
+    margin-bottom: 18px;
+  }
+
+  #avoidanceButton {
+    padding: 14px 16px;
+    font-size: 0.95rem;
+  }
+
+  .prompt-box {
+    padding: 18px 14px;
+    min-height: 90px;
+    font-size: 0.97rem;
+    line-height: 1.55;
+  }
 }
